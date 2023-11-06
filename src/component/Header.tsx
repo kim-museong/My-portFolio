@@ -12,11 +12,11 @@ import { scroller } from "react-scroll";
 const Header: React.FC = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  const handleScroll = () => {
+  const changeScrollY = () => {
     setScrollPosition(window.scrollY);
   };
 
-  const scrollToAbout = (name: string) => {
+  const onClickButton = (name: string) => {
     scroller.scrollTo(name, {
       duration: 800,
       smooth: "easeInOutQuint",
@@ -24,10 +24,10 @@ const Header: React.FC = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", changeScrollY);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", changeScrollY);
     };
   }, []);
 
@@ -53,7 +53,7 @@ const Header: React.FC = () => {
               color:
                 scrollPosition >= 0 && scrollPosition <= 400 ? "white" : "",
             }}
-            onClick={() => scrollToAbout("about")}
+            onClick={() => onClickButton("about")}
           >
             <HiUserCircle />
             <p>ABOUT</p>
@@ -65,7 +65,7 @@ const Header: React.FC = () => {
               color:
                 scrollPosition > 400 && scrollPosition <= 900 ? "white" : "",
             }}
-            onClick={() => scrollToAbout("resume")}
+            onClick={() => onClickButton("resume")}
           >
             <HiFlag />
             <p>RESUME</p>
@@ -77,7 +77,7 @@ const Header: React.FC = () => {
               color:
                 scrollPosition > 900 && scrollPosition <= 1600 ? "white" : "",
             }}
-            onClick={() => scrollToAbout("skill")}
+            onClick={() => onClickButton("skill")}
           >
             <HiCog6Tooth />
             <p>SKILL</p>
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
           <S.Item
             to="project"
             style={{ color: scrollPosition > 1600 ? "white" : "" }}
-            onClick={() => scrollToAbout("project")}
+            onClick={() => onClickButton("project")}
           >
             <HiRectangleGroup />
             <p>PROJECT</p>
