@@ -5,6 +5,6 @@ export const Wrapper = styled.div`
 `;
 
 export const SpaceBlock = styled.div`
-  width: 50%;
+  width: 500px;
   height: 100%;
 `;

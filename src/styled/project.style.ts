@@ -12,7 +12,7 @@ export const ProjectTitle = styled.div`
 
   p {
     &.pet {
-      color: orange;
+      color: rgb(255, 110, 0);
     }
   }
 
@@ -29,17 +29,28 @@ export const ProjectTitle = styled.div`
 `;
 
 export const DetailTitleBox = styled.div`
+  display: flex;
+  align-items: center;
   font-size: 32px;
+
+  svg {
+    font-size: 40px;
+    margin-right: 10px;
+  }
 `;
 
 export const GoSite = styled(Link)`
+  width: 160px;
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 20px;
   color: black;
+  border-bottom: 2px solid;
 
   svg {
     margin-bottom: 10px;
+    margin-left: 5px;
   }
 `;
 
