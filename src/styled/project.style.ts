@@ -32,6 +32,7 @@ export const DetailTitleBox = styled.div`
   display: flex;
   align-items: center;
   font-size: 32px;
+  margin-top: 30px;
 
   svg {
     font-size: 40px;

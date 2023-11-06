@@ -9,5 +9,5 @@ export const TitleBox = styled.div`
   display: inline-block;
   font-weight: bold;
   font-size: 80px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 `;
