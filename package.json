@@ -1,5 +1,4 @@
 {
-  "homepage": "https://kim-museong.github.io/My-profile/",
   "name": "museong-profile",
   "version": "0.1.0",
   "private": true,
@@ -29,6 +28,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://kim-museong.github.io/My-profile/",
   "eslintConfig": {
     "extends": [
       "react-app",
