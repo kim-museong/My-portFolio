@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "../styled/header.style";
 import {
   HiUserCircle,
@@ -7,8 +7,30 @@ import {
   HiRectangleGroup,
 } from "react-icons/hi2";
 import { BsGithub, BsInstagram } from "react-icons/bs";
+import { scroller } from "react-scroll";
 
 const Header: React.FC = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+
+  const scrollToAbout = (name: string) => {
+    scroller.scrollTo(name, {
+      duration: 800,
+      smooth: "easeInOutQuint",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <S.HeaderWrapper>
@@ -25,22 +47,47 @@ const Header: React.FC = () => {
         </S.ContactBox>
 
         <S.ListItem>
-          <S.Item to="about" smooth={true}>
+          <S.Item
+            to="about"
+            style={{
+              color:
+                scrollPosition >= 0 && scrollPosition <= 400 ? "white" : "",
+            }}
+            onClick={() => scrollToAbout("about")}
+          >
             <HiUserCircle />
             <p>ABOUT</p>
           </S.Item>
 
-          <S.Item to="resume" smooth={true}>
+          <S.Item
+            to="resume"
+            style={{
+              color:
+                scrollPosition > 400 && scrollPosition <= 900 ? "white" : "",
+            }}
+            onClick={() => scrollToAbout("resume")}
+          >
             <HiFlag />
             <p>RESUME</p>
           </S.Item>
 
-          <S.Item to="skill" smooth={true}>
+          <S.Item
+            to="skill"
+            style={{
+              color:
+                scrollPosition > 900 && scrollPosition <= 1600 ? "white" : "",
+            }}
+            onClick={() => scrollToAbout("skill")}
+          >
             <HiCog6Tooth />
             <p>SKILL</p>
           </S.Item>
 
-          <S.Item to="project" smooth={true}>
+          <S.Item
+            to="project"
+            style={{ color: scrollPosition > 1600 ? "white" : "" }}
+            onClick={() => scrollToAbout("project")}
+          >
             <HiRectangleGroup />
             <p>PROJECT</p>
           </S.Item>

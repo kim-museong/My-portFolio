@@ -28,14 +28,13 @@ const Resume: React.FC = () => {
         </S.TitleBox>
 
         <S.DetailBox>
-          <p>리눅스 운영체제로 수업을 진행하며 리눅스 명령어를 배웠습니다.</p>
+          <p>
+            리눅스 운영체제로 수업을 진행하며 리눅스 명령어를 학습하였습니다.
+          </p>
           <p>프론트엔드 기술: HTML, CSS, JavaScript, React</p>
           <p>백엔드 기술: Node.js </p>
           <p>데이터베이스: MySql</p>
-          <p>
-            Git, Github, Docker와 Aws를 배웠습니다. 4인 프로젝트를
-            진행하였습니다.
-          </p>
+          <p>Git, Github, Docker와 Aws를 학습하였습니다.</p>
         </S.DetailBox>
       </S.ResumeBox>
     </SH.Wrapper>

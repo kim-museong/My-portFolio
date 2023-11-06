@@ -5,7 +5,7 @@ export const ProjectTitle = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 50px;
+  margin: 50px 0;
   padding: 20px 40px;
   font-size: 40px;
   font-weight: bold;
@@ -45,14 +45,15 @@ export const GoSite = styled(Link)`
 
 export const ImgListBox = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
-  margin-left: 40px;
 `;
 
 export const ImgItem = styled.div`
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  background-image: url("/");
+  img {
+    width: 400px;
+    object-fit: contain;
+    border: 1px solid rgb(200, 200, 200);
+  }
 `;

@@ -26,13 +26,23 @@ const Project: React.FC = () => {
         </S.GoSite>
 
         <S.ImgListBox>
-          <S.ImgItem />
-          <S.ImgItem />
-          <S.ImgItem />
+          <S.ImgItem>
+            <img src="/images/petF1.png" alt="" />
+          </S.ImgItem>
+
+          <S.ImgItem>
+            <img src="/images/petF2.png" alt="" />
+          </S.ImgItem>
+
+          <S.ImgItem>
+            <img src="/images/petF3.png" alt="" />
+          </S.ImgItem>
+
+          <S.ImgItem>
+            <img src="/images/petF4.png" alt="" />
+          </S.ImgItem>
         </S.ImgListBox>
       </S.ProjectTitle>
-
-      <S.DetailTitleBox>Toy Project</S.DetailTitleBox>
     </SH.Wrapper>
   );
 };
