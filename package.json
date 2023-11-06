@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kim-museong.github.io/My-profile/",
   "name": "museong-profile",
   "version": "0.1.0",
   "private": true,
@@ -48,6 +49,5 @@
   },
   "devDependencies": {
     "@types/react-scroll": "^1.8.9"
-  },
-  "homepage": "https://kim-museong.github.io/My-profile/"
+  }
 }
