@@ -111,11 +111,13 @@ export const ImgListBox = styled.div`
 export const ImgItem = styled.div`
   img {
     width: 400px;
+    height: 200px;
     object-fit: contain;
     border: 1px solid rgb(200, 200, 200);
 
     @media all and (max-width: 767px) {
       width: 150px;
+      height: 75px;
     }
   }
 `;
