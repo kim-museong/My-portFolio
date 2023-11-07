@@ -6,4 +6,10 @@ export const SkillListBox = styled.div`
   gap: 40px;
   margin: 50px 0;
   font-size: 100px;
+
+  @media all and (max-width: 767px) {
+    font-size: 50px;
+    gap: 10px;
+    margin: 10px 0 30px;
+  }
 `;

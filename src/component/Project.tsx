@@ -31,19 +31,19 @@ const Project: React.FC = () => {
       </S.ProjectTitle>
       <S.ImgListBox>
         <S.ImgItem>
-          <img src="images/petF1.png" alt="" />
+          <img src="/images/petF1.png" alt="" />
         </S.ImgItem>
 
         <S.ImgItem>
-          <img src="images/petF2.png" alt="" />
+          <img src="/images/petF2.png" alt="" />
         </S.ImgItem>
 
         <S.ImgItem>
-          <img src="images/petF3.png" alt="" />
+          <img src="/images/petF3.png" alt="" />
         </S.ImgItem>
 
         <S.ImgItem>
-          <img src="images/petF4.png" alt="" />
+          <img src="/images/petF4.png" alt="" />
         </S.ImgItem>
       </S.ImgListBox>
 
@@ -68,11 +68,19 @@ const Project: React.FC = () => {
 
       <S.ImgListBox>
         <S.ImgItem>
-          <img src="images/profile1.png" alt="" />
+          <img src="/images/profile1.png" alt="" />
         </S.ImgItem>
 
         <S.ImgItem>
-          <img src="images/profile2.png" alt="" />
+          <img src="/images/profile2.png" alt="" />
+        </S.ImgItem>
+
+        <S.ImgItem>
+          <img src="/images/profile3.png" alt="" />
+        </S.ImgItem>
+
+        <S.ImgItem>
+          <img src="/images/profile4.png" alt="" />
         </S.ImgItem>
       </S.ImgListBox>
     </SH.Wrapper>
