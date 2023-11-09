@@ -12,8 +12,8 @@ const Project: React.FC = () => {
       <SH.TitleBox>Project</SH.TitleBox>
 
       <S.DetailTitleBox>
-        <FaUsers />
-        <p>Team Project</p>
+        <MdOutlineSmartToy />
+        <p>Toy Project</p>
       </S.DetailTitleBox>
 
       <S.ProjectTitle>
@@ -46,11 +46,6 @@ const Project: React.FC = () => {
           <img src="images/petF4.png" alt="" />
         </S.ImgItem>
       </S.ImgListBox>
-
-      <S.DetailTitleBox>
-        <MdOutlineSmartToy />
-        <p>Toy Project</p>
-      </S.DetailTitleBox>
 
       <S.ProjectTitle>
         <div className="flex">
