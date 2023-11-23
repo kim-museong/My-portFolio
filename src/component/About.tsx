@@ -8,8 +8,32 @@ const About: React.FC = () => {
       <SH.TitleBox>About Me</SH.TitleBox>
 
       <S.AboutBox>
-        <p>안녕하세요. 신입 개발자 김무성입니다.</p>
-        <p>새로운 도전을 두려워하지 않는 프론트엔드 개발자가 되겠습니다.</p>
+        <S.ProfileList>
+          <S.ProfileItem>
+            <S.AboutName>이름</S.AboutName>
+            <S.AboutContent>김무성</S.AboutContent>
+          </S.ProfileItem>
+
+          <S.ProfileItem>
+            <S.AboutName>생년월일</S.AboutName>
+            <S.AboutContent>01.04.19</S.AboutContent>
+          </S.ProfileItem>
+
+          <S.ProfileItem>
+            <S.AboutName>연락처</S.AboutName>
+            <S.AboutContent>010-7533-5244</S.AboutContent>
+          </S.ProfileItem>
+
+          <S.ProfileItem>
+            <S.AboutName>이메일</S.AboutName>
+            <S.AboutContent>antjd0419@gmail.com</S.AboutContent>
+          </S.ProfileItem>
+
+          <S.ProfileItem>
+            <S.AboutName>주소</S.AboutName>
+            <S.AboutContent>대구</S.AboutContent>
+          </S.ProfileItem>
+        </S.ProfileList>
       </S.AboutBox>
     </SH.Wrapper>
   );

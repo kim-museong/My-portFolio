@@ -2,15 +2,17 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 100px;
 `;
 
 export const TitleBox = styled.div`
-  display: inline-block;
   font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -1px;
 
   @media all and (min-width: 1024px) {
-    font-size: 80px;
+    font-size: 70px;
     margin-bottom: 100px;
   }
   /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
