@@ -1,8 +1,20 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+export const moveUpDown = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
 
 export const Wrapper = styled.div`
   margin: 0 auto;
-  padding-top: 100px;
+  padding: 100px 0;
 `;
 
 export const TitleBox = styled.div`
@@ -13,7 +25,7 @@ export const TitleBox = styled.div`
 
   @media all and (min-width: 1024px) {
     font-size: 70px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
   /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
   @media all and (max-width: 767px) {

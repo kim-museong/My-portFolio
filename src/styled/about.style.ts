@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { moveUpDown } from "./share.style";
 
 export const AboutBox = styled.div`
   text-align: center;
@@ -25,17 +26,29 @@ export const ProfileList = styled.ul`
 export const ProfileItem = styled.li`
   display: flex;
   flex-direction: column;
-  border: 3px solid rgb(55, 76, 92);
-  border-radius: 10px;
-  padding: 20px;
+  border: 6px solid rgb(55, 76, 92);
+  border-radius: 45px;
+  padding: 30px 0;
+
+  &.btn {
+    cursor: pointer;
+  }
 `;
 
 export const AboutName = styled.div`
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 `;
 
 export const AboutContent = styled.div`
-  font-size: 16px;
-  color: rgb(150, 150, 150);
+  font-size: 20px;
+  color: rgb(100, 100, 100);
+
+  svg {
+    margin-top: 10px;
+    font-size: 50px;
+    animation: ${moveUpDown} 1s ease-in-out infinite;
+  }
 `;

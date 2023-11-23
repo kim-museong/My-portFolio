@@ -7,8 +7,9 @@ import Project from "./Project";
 import * as S from "../styled/main.style";
 import { init, setPosition } from "../reduce/action";
 import { useDispatch } from "react-redux";
-import { scroller } from "react-scroll";
+
 import { FaCaretDown } from "react-icons/fa";
+import { onClickButton } from "../module/share";
 
 const Main: React.FC = () => {
   const dispatch = useDispatch();
@@ -16,14 +17,6 @@ const Main: React.FC = () => {
   const aboutLocationRef = useRef<any>(null);
   const resumeLocationRef = useRef<any>(null);
   const skillLocationRef = useRef<any>(null);
-
-  /** 원하는 Element위치로 이동하는 함수 */
-  const onClickButton = (name: string) => {
-    scroller.scrollTo(name, {
-      duration: 800,
-      smooth: "easeInOutQuint",
-    });
-  };
 
   useEffect(() => {
     dispatch(init());

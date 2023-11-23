@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { moveUpDown } from "./share.style";
 
 export const Wrapper = styled.div`
   @media all and (min-width: 1024px) {
@@ -40,6 +41,7 @@ export const NextBtn = styled.button`
   padding: 8px 15px 8px 20px;
   border: none;
   border-radius: 20px;
+  animation: ${moveUpDown} 1s ease-in-out infinite;
 `;
 
 export const DownSvg = styled.div`

@@ -1,12 +1,11 @@
 import React from "react";
 import * as S from "../styled/resume.style";
-import * as SH from "../styled/share.style";
 import { BsFillCalendarCheckFill } from "react-icons/bs";
 
 const Resume: React.FC = () => {
   return (
-    <SH.Wrapper>
-      <SH.TitleBox>Resume</SH.TitleBox>
+    <S.ResumeWrapper>
+      <S.ResumeTitle>Resume</S.ResumeTitle>
 
       <S.ResumeBox>
         <S.DataBox>
@@ -14,7 +13,7 @@ const Resume: React.FC = () => {
           <p>2017.03 ~ 2020.1</p>
         </S.DataBox>
 
-        <S.TitleBox>금오공업고등학교 졸업</S.TitleBox>
+        <S.NameBox>금오공업고등학교 졸업</S.NameBox>
       </S.ResumeBox>
 
       <S.ResumeBox>
@@ -23,9 +22,9 @@ const Resume: React.FC = () => {
           <p> 2023.01 ~ 2023.07</p>
         </S.DataBox>
 
-        <S.TitleBox>
+        <S.NameBox>
           (산대특) Node.js를 활용한 백&프론트 웹 개발자 양성 과정 수료
-        </S.TitleBox>
+        </S.NameBox>
 
         <S.DetailBox>
           <p>
@@ -37,7 +36,7 @@ const Resume: React.FC = () => {
           <p>Git, Github, Docker와 Aws를 학습하였습니다.</p>
         </S.DetailBox>
       </S.ResumeBox>
-    </SH.Wrapper>
+    </S.ResumeWrapper>
   );
 };
 

@@ -1,6 +1,15 @@
 import styled from "styled-components";
+import { TitleBox, Wrapper } from "./share.style";
+
+export const ResumeWrapper = styled(Wrapper)`
+  background-color: rgb(179, 195, 208);
+`;
+
+export const ResumeTitle = styled(TitleBox)``;
 
 export const ResumeBox = styled.div`
+  width: 70%;
+  margin: 0 auto;
   padding: 30px;
   font-size: 28px;
 
@@ -23,7 +32,7 @@ export const DataBox = styled.div`
   }
 
   svg {
-    color: red;
+    color: rgb(200, 17, 30);
   }
 
   @media all and (max-width: 767px) {
@@ -32,7 +41,7 @@ export const DataBox = styled.div`
   }
 `;
 
-export const TitleBox = styled.div`
+export const NameBox = styled.div`
   font-weight: bold;
   margin-bottom: 20px;
 `;

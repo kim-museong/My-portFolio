@@ -1,6 +1,8 @@
 import React from "react";
 import * as S from "../styled/about.style";
 import * as SH from "../styled/share.style";
+import { FaCaretDown } from "react-icons/fa";
+import { onClickButton } from "../module/share";
 
 const About: React.FC = () => {
   return (
@@ -32,6 +34,15 @@ const About: React.FC = () => {
           <S.ProfileItem>
             <S.AboutName>주소</S.AboutName>
             <S.AboutContent>대구</S.AboutContent>
+          </S.ProfileItem>
+
+          <S.ProfileItem
+            className="btn"
+            onClick={() => onClickButton("resume")}
+          >
+            <S.AboutContent>
+              <FaCaretDown />
+            </S.AboutContent>
           </S.ProfileItem>
         </S.ProfileList>
       </S.AboutBox>
