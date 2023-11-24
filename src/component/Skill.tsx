@@ -22,19 +22,42 @@ const Skill: React.FC = () => {
     <SH.Wrapper>
       <SH.TitleBox>Skill</SH.TitleBox>
 
-      <S.SkillListBox>
-        <FaHtml5 color="orange" />
-        <FaCss3Alt color="2965f1" />
-        <SiJavascript color="f0bd4f" />
-        <SiTypescript color="007acc" />
-        <FaNodeJs color="3c873a" />
-        <SiExpress color="black" />
-        <FaReact color="61dbfb" />
-        <SiRedux color="764abc" />
-        <SiMysql color="00758f" />
-        <FaGitAlt color="f1502f" />
-        <FaGithub color="black" />
-      </S.SkillListBox>
+      <S.SkillWrapper>
+        <S.MainSkillList>
+          <S.MainSkillName>Frontend</S.MainSkillName>
+          <S.SkillsBox>
+            <FaHtml5 color="orange" />
+            <FaCss3Alt color="2965f1" />
+            <SiJavascript color="f0bd4f" />
+            <SiTypescript color="007acc" />
+            <FaReact color="61dbfb" />
+            <SiRedux color="764abc" />
+          </S.SkillsBox>
+        </S.MainSkillList>
+
+        <S.MainSkillList>
+          <S.MainSkillName>Backend</S.MainSkillName>
+          <S.SkillsBox>
+            <FaNodeJs color="3c873a" />
+            <SiExpress color="black" />
+          </S.SkillsBox>
+        </S.MainSkillList>
+
+        <S.MainSkillList>
+          <S.MainSkillName>DataBase</S.MainSkillName>
+          <S.SkillsBox>
+            <SiMysql color="00758f" />
+          </S.SkillsBox>
+        </S.MainSkillList>
+
+        <S.MainSkillList>
+          <S.MainSkillName>Version Control</S.MainSkillName>
+          <S.SkillsBox>
+            <FaGitAlt color="f1502f" />
+            <FaGithub color="black" />
+          </S.SkillsBox>
+        </S.MainSkillList>
+      </S.SkillWrapper>
     </SH.Wrapper>
   );
 };
