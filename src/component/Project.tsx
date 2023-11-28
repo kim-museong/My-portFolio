@@ -2,19 +2,13 @@ import React from "react";
 import * as S from "../styled/project.style";
 import * as SH from "../styled/share.style";
 import { Link } from "react-router-dom";
-import { FaGithub, FaUsers } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaArrowRightToBracket } from "react-icons/fa6";
-import { MdOutlineSmartToy } from "react-icons/md";
 
 const Project: React.FC = () => {
   return (
-    <SH.Wrapper>
-      <SH.TitleBox>Project</SH.TitleBox>
-
-      <S.DetailTitleBox>
-        <MdOutlineSmartToy />
-        <p>Toy Project</p>
-      </S.DetailTitleBox>
+    <S.ProjectWrapper>
+      <S.ProjectNameBox>Project</S.ProjectNameBox>
 
       <S.ProjectTitle>
         <div className="flex">
@@ -78,7 +72,7 @@ const Project: React.FC = () => {
           <img src="images/profile4.png" alt="" />
         </S.ImgItem>
       </S.ImgListBox>
-    </SH.Wrapper>
+    </S.ProjectWrapper>
   );
 };
 

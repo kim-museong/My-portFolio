@@ -15,6 +15,10 @@ export const moveUpDown = keyframes`
 export const Wrapper = styled.div`
   margin: 0 auto;
   padding: 100px 0;
+
+  @media all and (max-width: 767px) {
+    padding: 30px 0;
+  }
 `;
 
 export const TitleBox = styled.div`

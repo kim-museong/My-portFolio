@@ -14,10 +14,8 @@ export const HeaderWrapper = styled.div`
     padding: 22px 0 14px;
   }
 
-  /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
   @media all and (max-width: 767px) {
-    min-width: 100px;
-    padding: 50px 20px;
+    padding: 15px 30px;
   }
 `;
 
@@ -28,6 +26,11 @@ export const ListItem = styled.ul`
   justify-content: right;
   align-items: center;
   gap: 30px;
+
+  @media all and (max-width: 767px) {
+    justify-content: center;
+    gap: 30px;
+  }
 `;
 
 export const Item = styled(Scroll.Link)`
@@ -41,6 +44,10 @@ export const Item = styled(Scroll.Link)`
   &.on {
     color: white;
     font-weight: bold;
+  }
+
+  @media all and (max-width: 767px) {
+    font-size: 13px;
   }
 `;
 

@@ -9,7 +9,7 @@ export const AboutBox = styled.div`
     margin-bottom: 50px;
     padding: 20px;
   }
-  /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+
   @media all and (max-width: 767px) {
     font-size: 20px;
   }
@@ -21,6 +21,13 @@ export const ProfileList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+
+  @media all and (max-width: 767px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 export const ProfileItem = styled.li`
@@ -33,6 +40,12 @@ export const ProfileItem = styled.li`
   &.btn {
     cursor: pointer;
   }
+
+  @media all and (max-width: 767px) {
+    width: 40%;
+    border-radius: 20px;
+    border: 3px solid rgb(55, 76, 92);
+  }
 `;
 
 export const AboutName = styled.div`
@@ -40,6 +53,10 @@ export const AboutName = styled.div`
   font-size: 22px;
   margin-bottom: 10px;
   text-transform: uppercase;
+
+  @media all and (max-width: 767px) {
+    font-size: 15px;
+  }
 `;
 
 export const AboutContent = styled.div`
@@ -50,5 +67,14 @@ export const AboutContent = styled.div`
     margin-top: 10px;
     font-size: 50px;
     animation: ${moveUpDown} 1s ease-in-out infinite;
+  }
+
+  @media all and (max-width: 767px) {
+    font-size: 12px;
+    word-wrap: break-word;
+
+    svg {
+      font-size: 30px;
+    }
   }
 `;

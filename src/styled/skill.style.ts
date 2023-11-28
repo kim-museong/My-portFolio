@@ -12,6 +12,9 @@ export const SkillWrapper = styled.div`
   }
 
   @media all and (max-width: 767px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     font-size: 50px;
     gap: 20px;
     margin: 10px 0 30px;
@@ -29,11 +32,21 @@ export const MainSkillList = styled.div`
   &:hover {
     transform: scale(1.03);
   }
+
+  @media all and (max-width: 767px) {
+    width: 80%;
+    margin: 0 auto;
+  }
 `;
 
 export const MainSkillName = styled.div`
   text-align: center;
   font-size: 32px;
+
+  @media all and (max-width: 767px) {
+    font-size: 20px;
+    font-weight: bold;
+  }
 `;
 
 export const SkillsBox = styled.div`
@@ -44,4 +57,9 @@ export const SkillsBox = styled.div`
   margin-top: 20px;
   padding: 20px;
   font-size: 70px;
+
+  @media all and (max-width: 767px) {
+    flex-wrap: wrap;
+    font-size: 40px;
+  }
 `;
