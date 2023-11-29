@@ -28,7 +28,7 @@ export const TitleBox = styled.div`
   letter-spacing: -1px;
 
   @media all and (min-width: 1024px) {
-    font-size: 70px;
+    font-size: 30px;
     padding-bottom: 100px;
   }
   /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/

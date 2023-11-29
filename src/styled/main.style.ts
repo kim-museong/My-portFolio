@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { moveUpDown } from "./share.style";
+import { palette } from "./colorPalette";
 
 export const Wrapper = styled.div`
   @media all and (min-width: 1024px) {
@@ -8,8 +9,8 @@ export const Wrapper = styled.div`
 `;
 
 export const thumbnailBox = styled.div`
-  background-color: rgb(55, 76, 92);
-  height: 500px;
+  background-color: ${palette.mainColor};
+  height: 700px;
   padding-top: 150px;
   text-align: center;
 `;
@@ -40,22 +41,26 @@ export const thumbnailContent = styled.div`
 
 export const NextBtn = styled.button`
   cursor: pointer;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px auto;
-  padding: 8px 15px 8px 20px;
+  margin: 300px auto 0;
+  padding: 10px;
+  font-size: 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 50%;
+  color: ${palette.mainColor};
   animation: ${moveUpDown} 1s ease-in-out infinite;
+  text-align: center;
+
+  svg {
+    margin-top: 4px;
+    color: ${palette.mainColor};
+  }
 
   @media all and (max-width: 767px) {
     margin: 50px auto;
   }
-`;
-
-export const DownSvg = styled.div`
-  margin-left: 5px;
-  color: rgb(55, 76, 92);
-  font-size: 20px;
 `;

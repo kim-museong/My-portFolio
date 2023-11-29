@@ -7,8 +7,7 @@ import Project from "./Project";
 import * as S from "../styled/main.style";
 import { init, setPosition } from "../reduce/action";
 import { useDispatch } from "react-redux";
-
-import { FaCaretDown } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa6";
 import { onClickButton } from "../module/share";
 
 const Main: React.FC = () => {
@@ -36,10 +35,7 @@ const Main: React.FC = () => {
           안녕하세요. 프론트엔드 개발자를 꿈꾸는 김무성입니다.
         </S.thumbnailContent>
         <S.NextBtn onClick={() => onClickButton("about")}>
-          더 알아보기
-          <S.DownSvg>
-            <FaCaretDown />
-          </S.DownSvg>
+          <FaAngleDown />
         </S.NextBtn>
       </S.thumbnailBox>
 

@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.div`
   color: white;
 
   @media all and (min-width: 1024px) {
-    padding: 22px 0 14px;
+    padding: 16px 0;
   }
 
   @media all and (max-width: 767px) {
@@ -20,7 +20,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const ListItem = styled.ul`
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: right;
@@ -40,6 +40,10 @@ export const Item = styled(Scroll.Link)`
   font-size: 18px;
   color: rgb(150, 150, 150);
   cursor: pointer;
+
+  &:hover {
+    color: white;
+  }
 
   &.on {
     color: white;

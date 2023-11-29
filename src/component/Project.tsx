@@ -1,11 +1,20 @@
 import React from "react";
 import * as S from "../styled/project.style";
-import * as SH from "../styled/share.style";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { FaArrowRightToBracket } from "react-icons/fa6";
 
 const Project: React.FC = () => {
+  const ProjectListHandler = (name: string, repeat: number) => {
+    const divs = Array.from({ length: repeat }, (v, i) => i + 1);
+
+    return divs.map((index) => (
+      <S.ImgItem key={index}>
+        <img src={require(`../images/${name}${index}.png`)} alt="" />
+      </S.ImgItem>
+    ));
+  };
+
   return (
     <S.ProjectWrapper>
       <S.ProjectNameBox>Project</S.ProjectNameBox>
@@ -23,23 +32,7 @@ const Project: React.FC = () => {
           <FaArrowRightToBracket />
         </S.GoSite>
       </S.ProjectTitle>
-      <S.ImgListBox>
-        <S.ImgItem>
-          <img src="images/petF1.png" alt="" />
-        </S.ImgItem>
-
-        <S.ImgItem>
-          <img src="images/petF2.png" alt="" />
-        </S.ImgItem>
-
-        <S.ImgItem>
-          <img src="images/petF3.png" alt="" />
-        </S.ImgItem>
-
-        <S.ImgItem>
-          <img src="images/petF4.png" alt="" />
-        </S.ImgItem>
-      </S.ImgListBox>
+      <S.ImgListBox>{ProjectListHandler("petF", 4)}</S.ImgListBox>
 
       <S.ProjectTitle>
         <div className="flex">
@@ -55,23 +48,7 @@ const Project: React.FC = () => {
         </S.GoSite>
       </S.ProjectTitle>
 
-      <S.ImgListBox>
-        <S.ImgItem>
-          <img src="images/profile1.png" alt="" />
-        </S.ImgItem>
-
-        <S.ImgItem>
-          <img src="images/profile2.png" alt="" />
-        </S.ImgItem>
-
-        <S.ImgItem>
-          <img src="images/profile3.png" alt="" />
-        </S.ImgItem>
-
-        <S.ImgItem>
-          <img src="images/profile4.png" alt="" />
-        </S.ImgItem>
-      </S.ImgListBox>
+      <S.ImgListBox>{ProjectListHandler("profile", 4)}</S.ImgListBox>
     </S.ProjectWrapper>
   );
 };

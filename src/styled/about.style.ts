@@ -1,8 +1,17 @@
 import styled from "styled-components";
-import { moveUpDown } from "./share.style";
+import { Wrapper, moveUpDown } from "./share.style";
+import { palette } from "./colorPalette";
+
+export const AboutWrapper = styled(Wrapper)``;
 
 export const AboutBox = styled.div`
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
+  gap: 100px;
 
   @media all and (min-width: 1024px) {
     font-size: 32px;
@@ -16,10 +25,7 @@ export const AboutBox = styled.div`
 `;
 
 export const ProfileList = styled.ul`
-  width: 60%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 
   @media all and (max-width: 767px) {
@@ -33,9 +39,10 @@ export const ProfileList = styled.ul`
 export const ProfileItem = styled.li`
   display: flex;
   flex-direction: column;
-  border: 6px solid rgb(55, 76, 92);
-  border-radius: 45px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
   padding: 30px 0;
+  margin-bottom: 20px;
 
   &.btn {
     cursor: pointer;
@@ -44,7 +51,7 @@ export const ProfileItem = styled.li`
   @media all and (max-width: 767px) {
     width: 40%;
     border-radius: 20px;
-    border: 3px solid rgb(55, 76, 92);
+    border: 2px solid rgb(55, 76, 92);
   }
 `;
 

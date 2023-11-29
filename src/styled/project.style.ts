@@ -132,7 +132,7 @@ export const ImgListBox = styled.div`
 export const ImgItem = styled.div`
   img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: contain;
     border: 1px solid rgb(200, 200, 200);
 
