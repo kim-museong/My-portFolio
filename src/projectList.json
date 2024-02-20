@@ -1,0 +1,27 @@
+{
+  "petFriends": {
+    "imageName": "petFriends",
+    "name": "펫프렌즈",
+    "explanation": "반려동물을 좋아하는 사람들을 위한 커뮤니티사이트",
+    "period": "23.06.23 ~ 07.28",
+    "gitAddress": "https://github.com/kim-museong/Pet-Friends-Project2",
+    "tags": [
+      { "id": 0, "text": "4인 프로젝트" },
+      { "id": 1, "text": "학원" }
+    ],
+    "reason": "조원중에 반려동물을 키우는 사람이 있고 커뮤니티를 만들어 보는 것이 기본적인 CRUD와 나중에 추가적인 기능을 넣기 좋을 것 같아서 펫 커뮤니티라는 프로젝트를 진행하게 되었습니다."
+  },
+
+  "portFolio": {
+    "imageName": "portFolio",
+    "name": "나만의 웹 포트폴리오",
+    "explanation": "만들어보고 싶은 것을 공부하고 구현하며 꾸며나가는 나만의 작은 웹사이트",
+    "period": "23.10.01 ~ ing",
+    "gitAddress": "",
+    "tags": [
+      { "id": 0, "text": "개인 프로젝트" },
+      { "id": 1, "text": "공부" },
+      { "id": 2, "text": "포트폴리오" }
+    ]
+  }
+}

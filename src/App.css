@@ -9,6 +9,12 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-body {
-  background-color: rgb(240, 247, 249);
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
