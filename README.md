@@ -31,14 +31,14 @@
 ### 미리보기
 
 <div>
-    <img src="https://github.com/kim-museong/My-profile/assets/130715054/a6aa8da7-f7fd-440a-84ad-a55269906e17"/>
+    <img src="https://github.com/kim-museong/My-profile/assets/130715054/a6aa8da7-f7fd-440a-84ad-a55269906e17" width="500" height="300"/>
 </div>
 <div>
-    <img src="https://github.com/kim-museong/My-profile/assets/130715054/c27525d9-c82e-4bca-bf8c-10c231a1c989"/>
+    <img src="https://github.com/kim-museong/My-profile/assets/130715054/c27525d9-c82e-4bca-bf8c-10c231a1c989" width="500" height="300"/>
 </div>
 <div>
-    <img src="https://github.com/kim-museong/My-profile/assets/130715054/e76ae6d3-035e-40a7-8438-2a50eddf2322"/>
+    <img src="https://github.com/kim-museong/My-profile/assets/130715054/e76ae6d3-035e-40a7-8438-2a50eddf2322" width="500" height="300"/>
 </div>
 <div>
-    <img src="https://github.com/kim-museong/My-profile/assets/130715054/19317d60-f9ec-4aae-8330-15c0d98018a3"/>
+    <img src="https://github.com/kim-museong/My-profile/assets/130715054/19317d60-f9ec-4aae-8330-15c0d98018a3" width="500" height="300"/>
 </div>
