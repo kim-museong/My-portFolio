@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.de22b704.css",
-    "main.js": "/static/js/main.77eeb280.js",
-    "static/js/787.8d39d3fc.chunk.js": "/static/js/787.8d39d3fc.chunk.js",
-    "static/media/petFriends1.png": "/static/media/petFriends1.75fe1e5c9c8686131393.png",
-    "static/media/portFolio3.png": "/static/media/portFolio3.3f5a22d82d9e3f993e0d.png",
-    "static/media/petFriends3.png": "/static/media/petFriends3.27970324aae1e7d541ec.png",
-    "static/media/petFriends4.png": "/static/media/petFriends4.a4a6aeaba83d0ec52063.png",
-    "static/media/petFriends2.png": "/static/media/petFriends2.e76b31affb9c60123f85.png",
-    "static/media/portFolio2.png": "/static/media/portFolio2.f97d0792998926d36a78.png",
-    "static/media/portFolio4.png": "/static/media/portFolio4.795d7cd59debfa640049.png",
-    "static/media/portFolio1.png": "/static/media/portFolio1.db77cde53b456ee73975.png",
-    "static/media/petFriends_logo.png": "/static/media/petFriends_logo.0948833851ea0306f167.png",
-    "static/media/portFolio_logo.png": "/static/media/portFolio_logo.b4ce8c7eb9f29836f13e.png",
-    "index.html": "/index.html",
-    "main.de22b704.css.map": "/static/css/main.de22b704.css.map",
-    "main.77eeb280.js.map": "/static/js/main.77eeb280.js.map",
-    "787.8d39d3fc.chunk.js.map": "/static/js/787.8d39d3fc.chunk.js.map"
+    "main.css": "/My-portFolio/static/css/main.de22b704.css",
+    "main.js": "/My-portFolio/static/js/main.ac1152cd.js",
+    "static/js/787.8d39d3fc.chunk.js": "/My-portFolio/static/js/787.8d39d3fc.chunk.js",
+    "static/media/petFriends1.png": "/My-portFolio/static/media/petFriends1.75fe1e5c9c8686131393.png",
+    "static/media/portFolio3.png": "/My-portFolio/static/media/portFolio3.3f5a22d82d9e3f993e0d.png",
+    "static/media/petFriends3.png": "/My-portFolio/static/media/petFriends3.27970324aae1e7d541ec.png",
+    "static/media/petFriends4.png": "/My-portFolio/static/media/petFriends4.a4a6aeaba83d0ec52063.png",
+    "static/media/petFriends2.png": "/My-portFolio/static/media/petFriends2.e76b31affb9c60123f85.png",
+    "static/media/portFolio2.png": "/My-portFolio/static/media/portFolio2.f97d0792998926d36a78.png",
+    "static/media/portFolio4.png": "/My-portFolio/static/media/portFolio4.795d7cd59debfa640049.png",
+    "static/media/portFolio1.png": "/My-portFolio/static/media/portFolio1.db77cde53b456ee73975.png",
+    "static/media/petFriends_logo.png": "/My-portFolio/static/media/petFriends_logo.0948833851ea0306f167.png",
+    "static/media/portFolio_logo.png": "/My-portFolio/static/media/portFolio_logo.b4ce8c7eb9f29836f13e.png",
+    "index.html": "/My-portFolio/index.html",
+    "main.de22b704.css.map": "/My-portFolio/static/css/main.de22b704.css.map",
+    "main.ac1152cd.js.map": "/My-portFolio/static/js/main.ac1152cd.js.map",
+    "787.8d39d3fc.chunk.js.map": "/My-portFolio/static/js/787.8d39d3fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de22b704.css",
-    "static/js/main.77eeb280.js"
+    "static/js/main.ac1152cd.js"
   ]
 }
