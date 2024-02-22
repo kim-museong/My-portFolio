@@ -5,9 +5,11 @@ import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+const baseName = "https://kim-museong.github.io";
+
 root.render(
   <>
-    <BrowserRouter>
+    <BrowserRouter basename={baseName}>
       <App />
     </BrowserRouter>
   </>

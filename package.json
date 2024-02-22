@@ -34,7 +34,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://kim-museong.github.io/My-portFolio",
   "eslintConfig": {
     "extends": [
       "react-app",
