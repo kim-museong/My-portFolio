@@ -16,7 +16,7 @@
 
 ### ⚒사용기술
 
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"><img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=black"><img src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=black">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"><img src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=black">
 
 ---
 
@@ -31,14 +31,11 @@
 ### 미리보기
 
 <div>
-    <img src="![portFolio1](https://github.com/kim-museong/My-profile/assets/130715054/a6aa8da7-f7fd-440a-84ad-a55269906e17)"/>
+    <img src="https://github.com/kim-museong/My-profile/assets/130715054/a6aa8da7-f7fd-440a-84ad-a55269906e17" width='45%'/>
+    <img src="https://github.com/kim-museong/My-profile/assets/130715054/c27525d9-c82e-4bca-bf8c-10c231a1c989" width='45%'/>
 </div>
 <div>
-    <img src="![portFolio2](https://github.com/kim-museong/My-profile/assets/130715054/c27525d9-c82e-4bca-bf8c-10c231a1c989)"/>
+    <img src="https://github.com/kim-museong/My-profile/assets/130715054/e76ae6d3-035e-40a7-8438-2a50eddf2322" width='45%'/>
+    <img src="https://github.com/kim-museong/My-profile/assets/130715054/19317d60-f9ec-4aae-8330-15c0d98018a3" width='45%'/>
 </div>
-<div>
-    <img src="![portFolio3](https://github.com/kim-museong/My-profile/assets/130715054/e76ae6d3-035e-40a7-8438-2a50eddf2322)"/>
-</div>
-<div>
-    <img src="![portFolio4](https://github.com/kim-museong/My-profile/assets/130715054/19317d60-f9ec-4aae-8330-15c0d98018a3)"/>
-</div>
+
