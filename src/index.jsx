@@ -5,7 +5,7 @@ import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const baseName = "https://kim-museong.github.io";
+const baseName = "https://kim-museong.github.io/My-portFolio";
 
 root.render(
   <>
