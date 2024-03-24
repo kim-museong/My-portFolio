@@ -10,16 +10,36 @@ const fadeIn = keyframes`
   }
 `;
 
-export const AboutBox = styled.div`
+export const Wrapper = styled.div`
   width: 80%;
-  margin: 50px auto 0;
+  margin: 0 auto;
+  padding: 40px 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
-  gap: 5%;
+  place-items: center;
 `;
 
-export const AboutContentBox = styled.div`
+export const Title = styled.div`
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 30px 0 50px;
+`;
+
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+`;
+
+export const Image = styled.img`
+  width: 300px;
+  border-radius: 50%;
+`;
+
+export const Introduction = styled.div`
   width: 100%;
   font-size: 26px;
 
@@ -32,14 +52,64 @@ export const AboutContentBox = styled.div`
     font-weight: 500;
     color: ${palette.blue[1]};
     padding: 0 5px;
-    animation: ${fadeIn} 1s ease forwards;
+    animation: ${fadeIn} 0.8s ease forwards;
   }
+`;
+
+export const SubTitle = styled.h3`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  margin: 100px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+
+  &::before,
+  &::after {
+    content: "";
+    flex-grow: 1;
+    margin: 0 20px;
+    height: 1px;
+    background-color: white;
+  }
+`;
+
+export const Contact = styled.div`
+  display: flex;
+  font-size: 20px;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  svg {
+    background-color: ${palette.blue[1]};
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  div + div {
+    margin-left: 30px;
+  }
+`;
+
+export const ResumeList = styled.div`
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ProfileList = styled.ul`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-top: 50px;
   gap: 20px;
 `;
@@ -54,29 +124,4 @@ export const ProfileItem = styled.li`
   &.btn {
     cursor: pointer;
   }
-`;
-
-export const AboutTagBox = styled.ul`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 50px 0;
-
-  li {
-    background-color: ${palette.gray[0]};
-    border-radius: 18px;
-    color: black;
-    padding: 5px 20px;
-    font-size: 1rem;
-  }
-`;
-
-export const ResumeListBox = styled.ul`
-  width: 100%;
-  display: flex;
-  padding-top: 90px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 `;

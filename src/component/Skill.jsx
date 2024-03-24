@@ -14,7 +14,6 @@ import {
   SiGithub,
 } from "react-icons/si";
 
-import Layout from "./Layout";
 import SkillArrange from "../module/skill/SkillArrange ";
 
 const frontEndSkillList = [
@@ -52,15 +51,13 @@ const Skill = () => {
   ];
 
   return (
-    <Layout title="Skill">
-      <S.ListBox>
-        {skillList.map((item, index) => (
-          <SkillArrange key={index} array={item?.skills}>
-            {item?.name}
-          </SkillArrange>
-        ))}
-      </S.ListBox>
-    </Layout>
+    <S.ListBox>
+      {skillList.map((item, index) => (
+        <SkillArrange key={index} array={item?.skills}>
+          {item?.name}
+        </SkillArrange>
+      ))}
+    </S.ListBox>
   );
 };
 

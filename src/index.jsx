@@ -1,18 +1,50 @@
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Main from "./Main";
+import About from "./component/About";
+import Skill from "./component/Skill";
+import Project from "./component/Project";
+import NotFound from "./component/NotFound";
+import Layout from "./component/Layout";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Main />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/skill",
+        element: <Skill />,
+      },
+      {
+        path: "/project",
+        element: <Project />,
+        children: [
+          {
+            path: ":projectName",
+            element: <Project />,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
+]);
 
-const baseName = "https://kim-museong.github.io/My-portFolio";
-
-root.render(
-  <>
-    <BrowserRouter basename={baseName}>
-      <App />
-    </BrowserRouter>
-  </>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
 );
 
 // If you want to start measuring performance in your app, pass a function

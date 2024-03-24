@@ -1,12 +1,14 @@
 import styled from "styled-components";
-import { Wrapper } from "./share.style";
+import { palette } from "./colorPalette";
 
-export const MainWrapper = styled(Wrapper)`
+export const MainWrapper = styled.div`
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   position: relative;
+  background-color: ${palette.backgroundColor};
 `;
 
 export const MainTitle = styled.div`

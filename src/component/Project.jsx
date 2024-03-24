@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import * as S from "../styled/project.style";
 import { palette } from "../styled/colorPalette";
-import Layout from "./Layout";
 import CircleImageBox from "../module/project/CircleImageBox";
 import ProjectItem from "./ProjectItem";
 import projectList from "../projectList.json";
@@ -32,7 +31,7 @@ const Project = () => {
   }, [params]);
 
   return (
-    <Layout title="Project">
+    <>
       <div>
         <S.ProjectCircleListBox>
           {/* 원모양 프로젝트 버튼 */}
@@ -51,7 +50,7 @@ const Project = () => {
       </div>
 
       {params.projectName && <ProjectItem data={data} />}
-    </Layout>
+    </>
   );
 };
 

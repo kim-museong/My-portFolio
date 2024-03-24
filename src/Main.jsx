@@ -1,11 +1,10 @@
-import * as S from "../styled/main.style";
-import Button from "./Button";
+import * as S from "./styled/main.style";
+import Button from "./component/Button";
 import { IoSettingsOutline } from "react-icons/io5";
 import { SiAboutdotme } from "react-icons/si";
 import { PiProjectorScreenChartLight } from "react-icons/pi";
-import { palette } from "../styled/colorPalette";
-import { MdSmartphone } from "react-icons/md";
-import { AiOutlineMail } from "react-icons/ai";
+import { palette } from "./styled/colorPalette";
+import "./App.css";
 
 const Main = () => {
   return (
@@ -48,18 +47,6 @@ const Main = () => {
             </Button>
           </S.ListItem>
         </S.ListBtnBox>
-
-        <S.ContactBox>
-          <div>
-            <MdSmartphone />
-            <div>: 010-7533-5244</div>
-          </div>
-
-          <div>
-            <AiOutlineMail />
-            <div>: antjd0419@gmail.com</div>
-          </div>
-        </S.ContactBox>
       </S.MainWrapper>
     </>
   );

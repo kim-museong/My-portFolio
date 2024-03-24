@@ -1,18 +1,25 @@
-import { useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "./Header";
-import * as SH from "../styled/share.style";
+import styled from "styled-components";
+import { palette } from "../styled/colorPalette";
 
-const Layout = ({ children, title }) => {
+export const Wrapper = styled.div`
+  margin: 0 auto;
+  height: auto;
+  min-height: 100%;
+  background-color: ${palette.backgroundColor};
+  color: white;
+`;
+
+const Layout = () => {
   const location = useLocation();
 
   return (
     <>
       {location.pathname !== "/" ? <Header /> : ""}
-
-      <SH.Wrapper>
-        <SH.TitleBox>{title}</SH.TitleBox>
-        {children}
-      </SH.Wrapper>
+      <Wrapper>
+        <Outlet />
+      </Wrapper>
     </>
   );
 };
