@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
 
   @media all and (max-width: 767px) {
     width: 90%;
-    padding: 30px 0;
+    padding: 30px 0 50px;
   }
 `;
 
@@ -47,17 +47,19 @@ export const ViewImage = styled.div`
   margin: 20px auto;
   text-align: center;
   border: 1px solid white;
-  background-image: url(${({ $selectimage }) => `${$selectimage}`});
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-size: 30px;
-  background-size: 100% 100%;
+  background-image: url(${({ $selectimage }) => `${$selectimage}`});
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   @media all and (max-width: 767px) {
-    height: 300px;
+    height: 200px;
+    font-size: 14px;
   }
 `;
 
@@ -145,6 +147,10 @@ export const Container = styled.div`
   .fontUp {
     font-size: 25px;
     margin-bottom: 10px;
+  }
+
+  @media all and (max-width: 767px) {
+    font-size: 14px;
   }
 `;
 

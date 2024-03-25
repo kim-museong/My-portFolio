@@ -6,6 +6,10 @@ const Container = styled.div`
   height: 100px;
   width: 95%;
   margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    height: 50px;
+  }
 `;
 
 const Wrapper = styled.div`

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ListBox = styled.div`
   width: 70%;
   margin: 0px auto;
-  padding: 30px 0;
+  padding: 30px 0 50px;
 `;
 
 export const Title = styled.div`
