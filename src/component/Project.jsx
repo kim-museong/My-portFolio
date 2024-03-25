@@ -1,55 +1,117 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import * as S from "../styled/project.style";
-import { palette } from "../styled/colorPalette";
-import CircleImageBox from "../module/project/CircleImageBox";
-import ProjectItem from "./ProjectItem";
-import projectList from "../projectList.json";
+import { styled, keyframes } from "styled-components";
+import GithubBtnBox from "../module/project/GithubBtnBox";
 import { loadImagesHandler } from "../module/loadImage";
+import * as S from "../styled/projectItem.style";
 
-const Project = () => {
-  const params = useParams();
-  const [data, setData] = useState(null);
+const showBox = keyframes`
+  0% {
+    opacity: 0.3;
+  }
 
-  const projects = [
-    {
-      name: "펫프렌즈",
-      imgurl: loadImagesHandler("petFriends_logo"),
-      borderColor: palette.projectColor,
-      href: "petFriends",
-    },
-    {
-      name: "나만의 포트폴리오",
-      imgurl: loadImagesHandler("portFolio_logo"),
-      borderColor: palette.blue[1],
-      href: "portFolio",
-    },
-  ];
+  100% {
+    opacity: 1;
+  }
+`;
 
-  useEffect(() => {
-    setData(projectList[params.projectName]);
-  }, [params]);
+const Wrapper = styled.div`
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 0;
+  animation: ${showBox} 0.5s;
+  letter-spacing: 1px;
+`;
 
+const ProejctImgListBox = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid white;
+
+    &:active {
+      position: absolute;
+    }
+  }
+`;
+
+const ProjectImgBox = styled.div`
+  height: 600px;
+  display: flex;
+  align-items: center;
+
+  @media all and (max-width: 767px) {
+    height: auto;
+  }
+`;
+
+const ProjectExplanation = styled.div`
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 20px 0;
+`;
+
+const Container = styled.div`
+  margin: 15px 0;
+  color: white;
+
+  .fontUp {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+`;
+
+const ContentBox = styled.div`
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 14px;
+`;
+
+const Project = ({ data }) => {
   return (
     <>
-      <div>
-        <S.ProjectCircleListBox>
-          {/* 원모양 프로젝트 버튼 */}
-          {projects.map((project, index) => (
-            <li key={index}>
-              <CircleImageBox
-                imgurl={project.imgurl}
-                borderColor={project.borderColor}
-                href={project.href}
-              >
-                {project.name}
-              </CircleImageBox>
-            </li>
-          ))}
-        </S.ProjectCircleListBox>
-      </div>
+      <Wrapper>
+        <ProjectImgBox>
+          <ProejctImgListBox>
+            {loadImagesHandler(data?.imageName, 4).map((img, index) => (
+              <img src={img} key={index} alt={`프로젝트사진${++index}`} />
+            ))}
+          </ProejctImgListBox>
+        </ProjectImgBox>
 
-      {params.projectName && <ProjectItem data={data} />}
+        <Container>
+          <S.ProjectTitle>{data?.name}</S.ProjectTitle>
+
+          <GithubBtnBox url={data?.gitAddress} />
+
+          <ProjectExplanation>
+            <S.PeriodBox>{data?.period}</S.PeriodBox>
+
+            <S.tagBox>
+              {data?.tags.map(
+                (tag) => tag && <ContentBox key={tag.id}>{tag.text}</ContentBox>
+              )}
+            </S.tagBox>
+
+            <S.ExplanationBox>{data?.explanation}</S.ExplanationBox>
+
+            {data?.reason && (
+              <S.ReasonBox>
+                <div className="title">선정하게 된 이유</div>
+                {data?.reason}
+              </S.ReasonBox>
+            )}
+          </ProjectExplanation>
+        </Container>
+      </Wrapper>
     </>
   );
 };

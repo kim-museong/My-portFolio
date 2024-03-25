@@ -11,6 +11,7 @@ const About = () => {
 
       <S.Content>
         <S.Image src={loadImagesHandler("my_ar_img")} alt="my-ar-img" />
+
         <S.Introduction>
           <p>
             <span>새로운 기술</span>과 도구를 공부하며,

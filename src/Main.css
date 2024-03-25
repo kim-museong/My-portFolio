@@ -18,3 +18,12 @@ body,
 body::-webkit-scrollbar {
   display: none;
 }
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  html,
+  body,
+  #root {
+    overflow-x: hidden;
+  }
+}

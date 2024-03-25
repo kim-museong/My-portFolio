@@ -13,7 +13,6 @@ import {
   SiExpress,
   SiGithub,
 } from "react-icons/si";
-
 import SkillArrange from "../module/skill/SkillArrange ";
 
 const frontEndSkillList = [
@@ -30,34 +29,37 @@ const backEndSkillList = [
 const DataBaseSikillList = [<SiMysql color="00758f" />];
 const ToolSkillList = [<FaGitAlt color="f1502f" />, <SiGithub color="black" />];
 
-const Skill = () => {
-  const skillList = [
-    {
-      name: "Frontend",
-      skills: frontEndSkillList,
-    },
-    {
-      name: "Backend",
-      skills: backEndSkillList,
-    },
-    {
-      name: "Database",
-      skills: DataBaseSikillList,
-    },
-    {
-      name: "Version Control",
-      skills: ToolSkillList,
-    },
-  ];
+const skillList = [
+  {
+    name: "Frontend",
+    skills: frontEndSkillList,
+  },
+  {
+    name: "Backend",
+    skills: backEndSkillList,
+  },
+  {
+    name: "Database",
+    skills: DataBaseSikillList,
+  },
+  {
+    name: "Version Control",
+    skills: ToolSkillList,
+  },
+];
 
+const Skill = () => {
   return (
-    <S.ListBox>
-      {skillList.map((item, index) => (
-        <SkillArrange key={index} array={item?.skills}>
-          {item?.name}
-        </SkillArrange>
-      ))}
-    </S.ListBox>
+    <>
+      <S.Title>My-Skill</S.Title>
+      <S.ListBox>
+        {skillList.map((item, index) => (
+          <SkillArrange key={index} array={item?.skills}>
+            {item?.name}
+          </SkillArrange>
+        ))}
+      </S.ListBox>
+    </>
   );
 };
 

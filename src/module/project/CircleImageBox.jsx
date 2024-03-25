@@ -6,9 +6,9 @@ const MainBox = styled.div`
   width: 120px;
   height: 120px;
   line-height: 60px;
-  background: ${({ bordercolor = "black", isclick }) =>
-    isclick === "true"
-      ? `linear-gradient(to right, ${bordercolor}, white)`
+  background: ${({ $bordercolor = "black", $isclick }) =>
+    $isclick === "true"
+      ? `linear-gradient(to right, ${$bordercolor}, white)`
       : "#444"};
   border-radius: 50%;
   display: flex;
@@ -31,7 +31,7 @@ const ImageBox = styled.div`
   height: 103px;
   margin: 0 auto;
   border-radius: 50%;
-  background-image: url(${({ imgurl }) => imgurl});
+  background-image: url(${({ $imgurl }) => `${$imgurl}`});
   background-color: white;
   background-repeat: no-repeat;
   background-size: 90%;
@@ -65,12 +65,12 @@ const CircleImageBox = ({ imgurl, borderColor, children, href }) => {
   return (
     <>
       <MainBox
-        bordercolor={borderColor}
+        $bordercolor={borderColor}
         onClick={() => moveProjectPageHandler(href)}
-        isclick={String(isClick)}
+        $isclick={String(isClick)}
       >
         <SubBox>
-          <ImageBox imgurl={imgurl} />
+          <ImageBox $imgurl={imgurl} />
         </SubBox>
       </MainBox>
       <NameBox>{children}</NameBox>

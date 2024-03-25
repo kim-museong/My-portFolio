@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const HeaderWrapper = styled.div`
+export const Wrapper = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+`;
+
+export const Container = styled.div`
   top: 20px;
   left: 0;
   z-index: 2;
@@ -11,9 +17,9 @@ export const HeaderWrapper = styled.div`
 export const HeaderBox = styled.div`
   position: absolute;
   top: 0;
-  right: ${({ open }) => (open ? "0" : "-260px")};
+  right: ${({ $open }) => ($open ? "0" : "-260px")};
   padding: 15px 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(100, 100, 100, 0.7);
   border-radius: 50px 0 0 50px;
   transition: all 0.2s ease-in-out;
 `;
@@ -58,6 +64,6 @@ export const GuideArrow = styled.div`
   color: white;
 
   svg {
-    transform: ${({ open }) => (open ? "scaleX(-1)" : "")};
+    transform: ${({ $open }) => ($open ? "scaleX(-1)" : "")};
   }
 `;

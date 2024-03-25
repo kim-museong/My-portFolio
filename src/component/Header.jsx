@@ -6,6 +6,7 @@ import { SiAboutdotme } from "react-icons/si";
 import { PiProjectorScreenChartLight } from "react-icons/pi";
 import { RiHome2Line } from "react-icons/ri";
 import { RiArrowLeftDoubleLine } from "react-icons/ri";
+import { palette } from "../styled/colorPalette";
 
 const Header = () => {
   const [isOpenSideBar, setisOpenSideBar] = useState(true);
@@ -15,10 +16,10 @@ const Header = () => {
   }, []);
 
   return (
-    <>
-      <S.HeaderWrapper>
-        <S.HeaderBox open={isOpenSideBar}>
-          <S.GuideArrow onClick={toggleSidebarHandler} open={isOpenSideBar}>
+    <S.Wrapper>
+      <S.Container>
+        <S.HeaderBox $open={isOpenSideBar}>
+          <S.GuideArrow onClick={toggleSidebarHandler} $open={isOpenSideBar}>
             <RiArrowLeftDoubleLine />
           </S.GuideArrow>
 
@@ -28,7 +29,7 @@ const Header = () => {
             </Button>
 
             <Button
-              color={"#00668c"}
+              color={palette.blue[1]}
               image={<SiAboutdotme />}
               url="about"
               size="s"
@@ -55,8 +56,8 @@ const Header = () => {
             </Button>
           </S.ListItem>
         </S.HeaderBox>
-      </S.HeaderWrapper>
-    </>
+      </S.Container>
+    </S.Wrapper>
   );
 };
 

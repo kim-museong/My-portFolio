@@ -7,3 +7,11 @@ export const ProjectCircleListBox = styled.ul`
   align-items: center;
   padding-top: 100px;
 `;
+
+export const Title = styled.div`
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  padding: 50px 0;
+`;

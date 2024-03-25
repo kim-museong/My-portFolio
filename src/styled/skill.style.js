@@ -3,8 +3,18 @@ import styled from "styled-components";
 export const ListBox = styled.div`
   width: 70%;
   margin: 0px auto;
-  padding-top: 100px;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+  padding: 30px 0;
+`;
+
+export const Title = styled.div`
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 50px;
+  text-align: center;
+  letter-spacing: 4px;
+
+  @media all and (max-width: 767px) {
+    font-size: 30px;
+  }
 `;

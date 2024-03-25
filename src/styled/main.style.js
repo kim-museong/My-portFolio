@@ -9,6 +9,11 @@ export const MainWrapper = styled.div`
   text-align: center;
   position: relative;
   background-color: ${palette.backgroundColor};
+
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
 `;
 
 export const MainTitle = styled.div`
@@ -17,12 +22,32 @@ export const MainTitle = styled.div`
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 15px;
+
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
 `;
 
 export const MainContent = styled.div`
   margin-top: 50px;
   font-size: 20px;
   color: white;
+
+  span {
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    font-size: 19px;
+
+    span {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
 `;
 
 export const ListBtnBox = styled.ul`

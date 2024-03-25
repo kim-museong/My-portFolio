@@ -17,8 +17,13 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   place-items: center;
+
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    padding: 20px;
+  }
 `;
 
 export const Title = styled.div`
@@ -32,11 +37,24 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   gap: 5rem;
+  text-align: center;
+
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 100%;
+  }
 `;
 
 export const Image = styled.img`
   width: 300px;
   border-radius: 50%;
+
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    width: 100px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const Introduction = styled.div`
@@ -53,6 +71,15 @@ export const Introduction = styled.div`
     color: ${palette.blue[1]};
     padding: 0 5px;
     animation: ${fadeIn} 0.8s ease forwards;
+  }
+
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    font-size: 13px;
+
+    span {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -74,10 +101,18 @@ export const SubTitle = styled.h3`
     height: 1px;
     background-color: white;
   }
+
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    margin: 30px 0;
+  }
 `;
 
 export const Contact = styled.div`
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   font-size: 20px;
 
   div {
@@ -94,17 +129,34 @@ export const Contact = styled.div`
     padding: 10px;
   }
 
-  div + div {
-    margin-left: 30px;
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    display: block;
+
+    div {
+      width: 200px;
+      margin: 0 auto;
+    }
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    div + div {
+      margin-top: 20px;
+    }
   }
 `;
 
 export const ResumeList = styled.div`
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 700px;
+
+  /* 모바일 */
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 `;
 
 export const ProfileList = styled.ul`
