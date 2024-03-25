@@ -6,6 +6,11 @@ export const ProjectCircleListBox = styled.ul`
   justify-content: center;
   align-items: center;
   padding-top: 100px;
+  position: relative;
+
+  @media all and (max-width: 767px) {
+    padding-top: 30px;
+  }
 `;
 
 export const Title = styled.div`

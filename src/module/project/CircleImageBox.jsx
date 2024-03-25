@@ -14,6 +14,11 @@ const MainBox = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  @media all and (max-width: 767px) {
+    width: 90px;
+    height: 90px;
+  }
 `;
 
 const SubBox = styled.div`
@@ -24,6 +29,11 @@ const SubBox = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
+
+  @media all and (max-width: 767px) {
+    width: 84px;
+    height: 84px;
+  }
 `;
 
 const ImageBox = styled.div`
@@ -36,6 +46,11 @@ const ImageBox = styled.div`
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: 50% 50%;
+
+  @media all and (max-width: 767px) {
+    width: 76px;
+    height: 76px;
+  }
 `;
 
 const NameBox = styled.div`

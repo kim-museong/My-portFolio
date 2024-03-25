@@ -6,6 +6,7 @@ import CircleImageBox from "../module/project/CircleImageBox";
 import Project from "./Project";
 import projectList from "../projectList.json";
 import { loadImagesHandler } from "../module/loadImage";
+import HelpBox from "../module/project/HelpBox";
 
 const Projects = () => {
   const params = useParams();
@@ -47,6 +48,7 @@ const Projects = () => {
               </CircleImageBox>
             </li>
           ))}
+          {!data && <HelpBox />}
         </S.ProjectCircleListBox>
       </div>
 

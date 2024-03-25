@@ -5,12 +5,13 @@ export const Wrapper = styled.div`
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 2;
 `;
 
 export const Container = styled.div`
   top: 20px;
   left: 0;
-  z-index: 2;
+  z-index: 1;
   position: relative;
 `;
 
@@ -22,6 +23,12 @@ export const HeaderBox = styled.div`
   background-color: rgba(100, 100, 100, 0.7);
   border-radius: 50px 0 0 50px;
   transition: all 0.2s ease-in-out;
+
+  @media all and (max-width: 767px) {
+    padding: 8px 0;
+    border-radius: 20px 0 0 20px;
+    right: ${({ $open }) => ($open ? "0" : "-290px")};
+  }
 `;
 
 export const ListItem = styled.ul`
@@ -65,5 +72,10 @@ export const GuideArrow = styled.div`
 
   svg {
     transform: ${({ $open }) => ($open ? "scaleX(-1)" : "")};
+  }
+
+  @media all and (max-width: 767px) {
+    font-size: 20px;
+    left: 5%;
   }
 `;
