@@ -23,7 +23,7 @@
 ### 주소
 
 <div>
-    <a href='https://kim-museong.github.io/My-profile/'>사이트로 이동하기</a>
+    <a href='https://kim-museong.github.io'>사이트로 이동하기</a>
 </div>
 
 ---
